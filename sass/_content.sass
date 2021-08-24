@@ -1,0 +1,110 @@
+.structure
+    background: linear-gradient(180deg, #fff, #289DCC)
+    position: relative
+    padding-top: 80px
+    padding-bottom: 80px
+    &__content
+        display: flex
+        align-items: center
+        justify-content: space-around
+    &__left
+        display: flex
+        flex-direction: column
+    &__right
+        display: flex
+        flex-direction: column
+    &__center  
+        display: block
+    &__block
+        margin-bottom: 100px
+        display: flex
+        align-items: center
+        flex-direction: column
+        img
+            height: 130px
+            width: 130px
+            object-fit: contain
+        &__img
+            height: 135px
+            width: 135px
+            display: block
+            border-radius: 50%
+            background-color: #fff
+            margin-bottom: 10px
+            display: flex
+            align-items: center
+            justify-content: center
+@media screen and ( max-width: 1200px )
+    .structure
+        &__center 
+            img
+                width: 200px 
+                object-fit: cover
+@media screen and ( max-width: 1000px )
+    .structure
+        .promo__content__chars__btn
+            font-size: 18px
+        &__center 
+            img
+                width: 150px 
+        &__block
+            margin-bottom: 50px
+            &__img
+                width: 110px
+                height: 110px
+                img
+                    width: 100px
+                    height: 100px
+@media screen and ( max-width: 800px )
+    .structure
+        padding-bottom: 40px
+        &__center 
+            img
+                width: 100px 
+        &__block
+            margin-bottom: 40px
+            &__img
+                width: 100px
+                height: 100px
+                img
+                    width: 90px
+                    height: 90px
+@media screen and ( max-width: 600px )
+    .structure
+        .promo__content__chars__btn
+            margin-bottom: 25px
+            margin-top: 20px
+        &__content
+            flex-direction: column
+        &__center
+            order: 1
+        &__left
+            order: 2
+            flex-direction: row
+            justify-content: space-between
+        &__right
+            order: 3
+            flex-direction: row
+            justify-content: space-between
+        &__block
+            margin-right: 5px
+            margin-left: 5px
+@media screen and ( max-width: 510px )
+    .structure
+        &__block
+            margin-right: 10px
+            margin-left: 10px
+            &__img
+                width: 80px
+                height: 80px
+                img
+                    width: 75px
+                    height: 75px
+            span
+                font-size: 14px
+                text-align: center
+@media screen and ( max-width: 450px )
+    .structure
+        &__block
+            margin-right: 5px
+            margin-left: 5px

@@ -1,0 +1,61 @@
+.about
+    background: linear-gradient(0deg,#289DCC, #92E0FF)
+    padding-top: 80px
+    padding-bottom: 80px
+    &__info
+        display: flex
+        align-items: center
+        justify-content: space-around
+        max-width: 85%
+        margin: auto
+        margin-top: 80px
+        &__text
+            &__info
+                max-width: 400px
+                margin-bottom: 40px
+@media screen and ( max-width: 1200px )
+    .about
+        &__info
+            img
+                width: 400px
+                object-fit: cover
+@media screen and ( max-width: 1000px )
+    .about
+        padding-top: 40px
+        padding-bottom: 40px
+        &__info
+            max-width: 100%
+@media screen and ( max-width: 800px )
+    .about
+        &__info
+            img
+                width: 300px
+                margin-right: 20px
+            &__text
+                &__info
+                    font-size: 14px
+            .promo__content__chars
+                &__title
+                    font-size: 18px
+                ul
+                    margin-top: 15px
+                    li
+                        font-size: 14px
+                        margin-bottom: 5px
+                &__btn
+                    font-size: 16px
+                    margin-top: 20px
+                    width: 250px
+@media screen and ( max-width: 600px )
+    .about
+        &__info
+            display: flex
+            flex-direction: column
+            &__text
+                margin-top: 30px
+                text-align: center
+            .promo__content__chars
+                display: flex
+                align-items: center
+                justify-content: center
+                flex-direction: column

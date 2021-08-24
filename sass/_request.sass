@@ -1,0 +1,186 @@
+.request
+    background: linear-gradient(180deg,#289DCC, #92E0FF)
+    padding-top: 80px
+    padding-bottom: 80px
+    .promo__title
+        margin-bottom: 40px
+    .countdown 
+        font-family: sans-serif
+        color: #289DCC
+        display: block
+        margin: auto
+        font-weight: 100
+        text-align: center
+        font-size: 30px
+        margin-bottom: 60px
+    .countdown-number 
+        padding: 10px
+        border-radius: 3px
+        background: #fff
+        display: inline-block
+    .countdown-time 
+        padding: 15px
+        border-radius: 3px
+        background: #289DCC
+        display: inline-block
+    .countdown-text 
+        display: block
+        padding-top: 5px
+        font-size: 16px
+        color: #289DCC
+    &__content
+        display: flex
+        align-items: start
+        justify-content: space-between
+        max-width: 65%
+        margin: auto
+        &__product
+            display: flex
+            flex-direction: column
+            align-items: center
+            &__price
+                display: flex
+                flex-direction: column
+                align-items: center
+                margin-top: 30px
+                span
+                    &:first-child
+                        font-size: 36px
+                        font-weight: 700
+                        animation: bounce
+                        animation-duration: 2s
+                        animation-iteration-count: infinite
+                    &:last-child
+                        font-size: 24px
+                        text-decoration: line-through
+                        color: rgba(#fff, 0.5)
+        &__form
+            &__title
+                text-align: center
+                max-width: 400px
+                font-size: 24px
+                margin: auto
+                margin-bottom: 30px
+            &__block
+                display: flex
+                flex-direction: column
+                border: 1px solid #fff
+                padding: 40px 34px
+                input[type=tel], input[type=text]
+                    width: 370px
+                    height: 45px
+                    margin-bottom: 20px
+                    border: 1px solid #fff
+                    background-color: transparent
+                    text-indent: 20px
+                    outline: none
+                    &::placeholder
+                        color: rgba(#fff, 0.7)
+                        font-size: 12px
+                div
+                    margin-bottom: 15px
+                    span
+                        font-size: 12px
+                &__btn
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    width: 320px
+                    height: 45px
+                    border: 1px solid #fff
+                    margin: auto
+                    &:hover
+                        cursor: pointer
+                        background-color: rgba(#fff, 0.1)
+                        color: #d0f2ff
+@media screen and ( max-width: 1500px )
+    .request
+        &__content
+            max-width: 75% 
+@media screen and ( max-width: 1300px )
+    .request
+        &__content
+            max-width: 90% 
+@media screen and ( max-width: 1100px )
+    .request
+        &__content
+            max-width: 100% 
+@media screen and ( max-width: 950px )
+    .request
+        &__content
+            &__product
+                img
+                    width: 200px
+                    object-fit: cover
+            &__form
+                &__title
+                    font-size: 18px
+                &__block
+                    padding: 20px
+                    &__btn
+                        font-size: 16px
+                        width: 300px
+                        height: 30px
+                    input[type=tel], input[type=text]
+                        width: 300px
+                        height: 30px
+                        display: block
+                        margin: auto
+                        margin-bottom: 15px
+@media screen and ( max-width: 800px )
+    .request
+        &__content
+            &__product
+                img
+                    width: 150px
+@media screen and ( max-width: 700px )
+    .request
+        &__content
+            &__form
+                &__title
+                    font-size: 16px
+                &__block
+                    padding: 10px
+                    max-width: 220px
+                    margin: auto
+                    div
+                        width: 200px
+                        margin: auto  
+                        margin-bottom: 10px  
+                    &__btn
+                        font-size: 16px
+                        width: 200px
+                        height: 30px
+                    input[type=tel], input[type=text]
+                        width: 200px
+@media screen and ( max-width: 600px )
+    .request
+        &__content
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            &__product
+                margin-bottom: 20px
+            &__form
+               &__block
+                   padding: 10px
+                   max-width: 80%
+                   margin: auto
+                   div
+                       width: 90%
+                       margin: auto  
+                       margin-bottom: 10px  
+                   &__btn
+                       font-size: 16px
+                       width: 90%
+                       height: 30px
+                   input[type=tel], input[type=text]
+                       width: 90%
+@media screen and ( max-width: 420px )
+    .countdown-number
+        padding: 5px !important
+        span, .countdown-text
+            font-size: 12px
+        .countdown-time
+            padding: 8px
+        

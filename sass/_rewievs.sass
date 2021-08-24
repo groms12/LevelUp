@@ -1,0 +1,58 @@
+.rewievs
+    background: linear-gradient(180deg,#289DCC, #92E0FF)
+    padding-top: 80px
+    padding-bottom: 80px
+    .swiper-button-prev
+        transform: rotate(180deg)
+    .promo__title
+        margin-bottom: 50px
+    .swiper-container
+        width: 80%
+        margin: auto
+    &__slider
+        border: 1px solid #fff
+        padding: 35px 60px
+        max-width: 50%
+        margin: auto
+        &__people
+            display: flex
+            align-items: center
+            justify-content: start
+            margin-bottom: 50px
+            &__img
+                width: 75px
+                height: 75px
+                border-radius: 50%
+                object-fit: cover
+            &__info
+                display: flex
+                flex-direction: column
+                margin-left: 25px
+                span
+                    &:first-child
+                        margin-bottom: 10px
+                        font-weight: 700
+        &__text
+            max-width: 660px
+@media screen and ( max-width: 1200px )
+    .swiper-container
+        width: 100%
+@media screen and ( max-width: 800px )
+    .rewievs
+        &__slider
+            max-width: 60%
+            padding: 25px
+            &__text
+                font-size: 14px
+                max-width: 300px
+            &__people
+                margin-bottom: 25px
+                &__info
+                    span
+                        font-size: 14px
+@media screen and ( max-width: 550px )
+    .rewievs
+        &__slider
+            max-width: 100%
+        .swiper-button-prev, .swiper-button-next
+            display: none

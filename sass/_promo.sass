@@ -1,0 +1,109 @@
+.container  
+    width: 80%
+    max-width: 1440px
+    margin: auto
+*
+    color: #FFF
+    font-family: 'Montserrat', sans-serif
+    font-weight: 400
+    font-size: 18px
+    overflow-x: hidden
+.promo
+    position: relative
+    overflow: hidden
+    height: 935px
+    .video
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+    .content
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+    &__title
+        display: flex
+        justify-content: center
+        position: relative
+        margin-top: 75px
+        &__big
+            font-size: 72px
+            color: rgba(#fff, 0.1)
+            font-weight: 700
+        &__small
+            font-size: 48px
+            font-weight: 700
+            position: absolute
+            top: 35px
+    &__content
+        display: flex
+        width: 65%
+        align-items: center
+        justify-content: space-between
+        margin: auto
+        margin-top: 100px
+        &__chars
+            &__title
+                font-size: 36px
+            ul
+                margin-top: 30px
+                li
+                    font-size: 24px
+                    margin-bottom: 24px 
+                    list-style: decimal
+            &__btn
+                border: 1px solid #fff
+                width: 350
+                height: 45px
+                margin-top: 45px
+                display: flex
+                align-items: center
+                justify-content: center
+                font-size: 24px
+                &:hover
+                    cursor: pointer
+                    background-color: rgba(#fff, 0.1)
+                    color: #d0f2ff
+
+@media screen and ( max-width: 1400px )
+    .promo
+        &__content
+            width: 80%
+@media screen and ( max-width: 1000px )
+    .promo
+        &__content
+            width: 100%
+@media screen and ( max-width: 800px )
+    .promo
+        height: 600px
+        &__content
+            margin-top: 50px
+            img
+                width: 200px
+                object-fit: contain
+        &__title
+            margin-top: 50px
+@media screen and ( max-width: 670px )
+    .promo
+        height: 950px
+        &__content
+            flex-direction: column
+            img
+                margin-bottom: 40px
+@media screen and ( max-width: 450px )
+    .promo
+        height: 800px
+        &__content
+            &__chars
+                &__title
+                    font-size: 24px
+                ul
+                    li
+                        font-size: 18px
+                &__btn
+                    font-size: 18px
+                    margin-top: 20px
+            img
+                width: 150px
