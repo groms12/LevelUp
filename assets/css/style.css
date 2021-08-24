@@ -12,6 +12,10 @@
   overflow-x: hidden;
 }
 
+body {
+  margin: 0;
+}
+
 .promo {
   position: relative;
   overflow: hidden;
@@ -42,6 +46,7 @@
           justify-content: center;
   position: relative;
   margin-top: 75px;
+  overflow-y: hidden;
 }
 
 .promo__title__big {
